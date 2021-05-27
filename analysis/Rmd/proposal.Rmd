@@ -5,3 +5,5 @@ date: "5/27/2021"
 output: html_document
 ---
 
+Goal here is to clearly state our goals and to outline the paper.
+
