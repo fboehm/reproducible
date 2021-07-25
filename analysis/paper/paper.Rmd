@@ -1,20 +1,20 @@
 ---
-title: "Title Goes Here"
+title: "R packages structure research projects and enhance reproducibility"
 author:
-  - Myfirstname Mylastname:
-      email: fl@oneplace.edu
-      institute: [UofO]
+  - Frederick J. Boehm:
+      email: frederick.boehm@gmail.com  
+      institute: [UofM]
       correspondence: true
-  - Yourfirstname Yourlastname:
-      email: fl@another.edu
-      institute: [UofA]
+  - Bret M. Hanlon:
+      email: bmhanlon@wisc.edu
+      institute: [UofW]
       correspondence: false
 institute:
-  - UofO: University of One Place
-  - UofA: University of Another Place
+  - UofM: University of Michigan
+  - UofW: University of Wisconsin-Madison
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
-    bookdown::word_document2:
+    bookdown::pdf_document2:
       fig_caption: yes
       reference_docx: "../templates/template.docx" # Insert path for the DOCX file
       pandoc_args:
@@ -24,7 +24,7 @@ output:
 bibliography: references.bib
 csl: "../templates/journal-of-archaeological-science.csl" # Insert path for the bib-style
 abstract: |
-  Text of abstract
+  We present a case for using R packages as the core structure for research projects. We review the ways in which R packages may be used for teaching research skills in data science and statistics. Building on existing software tools, we present reproducible R code that enables users to construct their own packages for use in data analysis and research. The R package structure has much to offer teachers and students of data science and statistics. Below, we review the standard structure of R packages. We then elaborate this structure to include a subdirectory for additional data analysis resources. Our audience is instructors of courses for upper level undergraduate students. We assume that these undergraduate students have modest familiarity with R computing, presumably developed in data science and statistics courses and independent research projects, so we don't discuss approaches to teaching basic R skills. 
 keywords: |
   keyword 1; keyword 2; keyword 3
 highlights: |
@@ -57,13 +57,50 @@ knitr::opts_chunk$set(
 
 # Introduction
 
-Here is a citation [@Marwick2017]
+## R package structure
 
-# Background
+The structure of an R package consists of a collection of specifically named directories and files. Every R package must have:
 
-# Methods
+TABLE 1: List of required files and directories for an R package.
+(Not sure that I can name these off the top of my head, but it's easy to look them up). Files: DESCRIPTION, NAMESPACE, etc
+Directories: R, man, ...
 
-# Results
+* Need to explain contents and structure of each item in TABLE 1. 
+
+
+## How to construct an R package
+
+* usethis R package; devtools R package; rrtools R package on github
+* Provide R exact code here
+* Rstudio IDE shortcuts
+* Github actions (added to package via calls to usethis functions)
+
+We demonstrate one way to construct an R package from scratch. We do this from within an R session. We also discuss how users of Rstudio IDE software can quickly and efficiently start a new R package. 
+
+What subdirectories to add to a "mypackage/analysis" directory:
+Rscript: .R files that 
+Rmd: Rmarkdown files and their outputs
+data: inputs of any format
+results: tables, figures, intermediate rds files?
+
+
+
+## Teaching others how to construct an R package
+
+* Existing resources:
+    * Check Greg Wilson's book Teaching Technology Together
+    * Data Carpentry resources?? I'm unaware of R package materials from The Carpentries
+    * Rstudio's online refs
+
+* Karl Broman's tools4rr page: https://kbroman.org/Tools4RR/
+* 
+
+
+
+## Assessment of R packages for data analysis projects
+
+* Include a detailed rubric in our paper
+* Scaffolding a long-term project with intermediate deadlines
 
 <!-- Here's some example analysis code: -->
 
