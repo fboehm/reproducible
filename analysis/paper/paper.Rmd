@@ -1,5 +1,5 @@
 ---
-title: "R packages structure research projects and enhance reproducibility"
+title: "R packages structure student research projects and enhance research reproducibility"
 author:
   - Frederick J. Boehm:
       email: frederick.boehm@gmail.com  
@@ -57,6 +57,39 @@ knitr::opts_chunk$set(
 
 # Introduction
 
+Many undergraduate programs in statistics and data science feature a capstone course 
+with student projects. Such projects serve a variety of purposes; for example, 
+they may aid students in preparing for transitions to the workplace or serve as a bridge to 
+study for advanced degrees. 
+
+Given the ongoing crisis in research reproducibility, much recent discussion has sought to 
+identify practices that promote research integrity and reproducibility. Throughout this 
+article, we say that an article is "reproducible" if, given the raw data and analysis 
+instructions, a reasonably experienced user can generate exactly the reported results. What 
+constitutes analysis instructions clearly plays a crucial role. 
+
+One practice that we've found useful, both in our own research and in our teaching of research 
+skills, is the use of R packages as the skeleton structure of a research project 
+in data science and statistics. Recent advances in developer-friendly 
+R tools, such as the functions in the packages `devtools`, `usethis`, `testthat`, and `rrtools`, 
+have lowered barriers to creating, testing, and maintaining R packages for 
+data analysis projects. 
+
+Throughout this article, we share reproducible R code that can be used to create 
+an R package for data analysis projects. We also share our code in a git repository on 
+Github (https://github.com/fboehm/reproducible).
+
+
+
+
+
+
+
+
+
+
+
+
 ## R package structure
 
 The structure of an R package consists of a collection of specifically named directories and files. Every R package must have:
@@ -71,6 +104,7 @@ Directories: R, man, ...
 ## How to construct an R package
 
 * usethis R package; devtools R package; rrtools R package on github
+  * which functions in `usethis` to get started with a new package??
 * Provide R exact code here
 * Rstudio IDE shortcuts
 * Github actions (added to package via calls to usethis functions)
@@ -102,24 +136,6 @@ results: tables, figures, intermediate rds files?
 * Include a detailed rubric in our paper
 * Scaffolding a long-term project with intermediate deadlines
 
-<!-- Here's some example analysis code: -->
-
-```{r get-data, eval = FALSE}
-# Note the path that we need to use to access our data files when rendering this document
-my_data <- read.csv(here::here('analysis/data/raw_data/my_csv_file.csv'))
-```
-
-```{r demo-plot, fig.cap="A plot of random numbers"}
-plot(rnorm(10))
-```
-
-Figure \@ref(fig:demo-plot) shows how we can have a caption and cross-reference for a plot
-
-```{r demo-inline-code}
-x <- round(pi, 2)
-```
-
-Here is an example of inline code `r x` in the middle of a sentence. 
 
 # Discussion
 
