@@ -28,3 +28,7 @@ notebooks](https://arxiv.org/abs/1810.08055)
 
 [10 simple rules for writing Dockerfiles for reproducible data
 science](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008316)
+
+## To do
+
+-   [ ] Look for key refs to research reproducibility crisis
