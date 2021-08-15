@@ -59,7 +59,7 @@ knitr::opts_chunk$set(
 
 Many undergraduate programs in statistics and data science feature a capstone course 
 with student projects. Such projects serve a variety of purposes; for example, 
-they may aid students in preparing for transitions to the workplace or serve as a bridge to 
+they may aid students in preparing for transitions to the workplace or may serve as a bridge to 
 study for advanced degrees. 
 
 Given the ongoing crisis in research reproducibility, much recent discussion has sought to 
@@ -134,7 +134,7 @@ results: tables, figures, intermediate rds files?
 ## Assessment of R packages for data analysis projects
 
 * Include a detailed rubric in our paper
-* Scaffolding a long-term project with intermediate deadlines
+* Scaffolding a long-term project (as an R package) with intermediate deadlines
 
 
 # Discussion
