@@ -1,0 +1,29 @@
+---
+title: 'How to create an R package for a data analysis project: A tutorial for data
+  science & statistics students'
+author: "Frederick Boehm"
+date: "8/25/2021"
+output: html_document
+---
+
+```{r}
+knitr::opts_chunk$set(
+  eval = FALSE
+)
+```
+
+```{r, eval = FALSE}
+library(usethis)
+```
+
+```{r}
+create_package(path = "tweets") 
+# created a directory 'tweets' in the current working directory
+# creates empty subdirectory "R" and files "DESCRIPTION" and "NAMESPACE". 
+# Files "DESCRIPTION" and "NAMESPACE" are populated with initial values
+# You will need to edit "DESCRIPTION" by hand 
+# File "NAMESPACE" shouldn't be edited by hand. Instead, we'll use the R package "Roxygen2" to automate creation of a new "NAMESPACE" file. 
+# this function also changes the working directory to 'tweets'
+
+```
+
