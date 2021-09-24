@@ -29,6 +29,9 @@ notebooks](https://arxiv.org/abs/1810.08055)
 [10 simple rules for writing Dockerfiles for reproducible data
 science](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008316)
 
+https://www.r-bloggers.com/2021/05/big-book-of-r-has-over-200-books/
+
+
 ## To do
 
 -   [ ] Look for key refs to research reproducibility crisis
