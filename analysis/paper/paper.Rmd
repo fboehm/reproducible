@@ -64,7 +64,7 @@ study for advanced degrees.
 
 Given the ongoing crisis in research reproducibility, much recent discussion has sought to 
 identify practices that promote research integrity and reproducibility. Throughout this 
-article, we say that an article is "reproducible" if, given the raw data and analysis 
+article, we say that an analysis is "reproducible" if, given the raw data and analysis 
 instructions, a reasonably experienced user can generate exactly the reported results. What 
 constitutes analysis instructions clearly plays a crucial role. 
 
@@ -101,7 +101,9 @@ Directories: R, man, ...
 * Need to explain contents and structure of each item in TABLE 1. 
 
 
-## How to construct an R package
+
+
+## How to construct an R package for an analysis project
 
 * usethis R package; devtools R package; rrtools R package on github
   * which functions in `usethis` to get started with a new package??
@@ -112,12 +114,12 @@ Directories: R, man, ...
 We demonstrate one way to construct an R package from scratch. We do this from within an R session. We also discuss how users of Rstudio IDE software can quickly and efficiently start a new R package. 
 
 What subdirectories to add to a "mypackage/analysis" directory:
-Rscript: .R files that 
+Rscript: .R files that execute part of the analysis
 Rmd: Rmarkdown files and their outputs
 data: inputs of any format
 results: tables, figures, intermediate rds files?
 
-
+*cite Hadley Wickham's google doc*
 
 ## Teaching others how to construct an R package
 
@@ -128,6 +130,11 @@ results: tables, figures, intermediate rds files?
 
 * Karl Broman's tools4rr page: https://kbroman.org/Tools4RR/
 * 
+
+We propose to teach students to construct an R package for a data analysis project 
+by following an annotated Rmarkdown file that contains both R code and text 
+that discusses the R code. Additionally, the Rmarkdown file highlights options 
+for tailoring the data analysis R package to the project.
 
 
 
